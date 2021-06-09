@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name CD74HC4050PWR)(type Legacy)(uri ${KIPRJMOD}/lib/symbols/CD74HC4050PWR.lib)(options "")(descr ""))
+  (lib (name midi-uart-interface-san)(type Legacy)(uri ${KIPRJMOD}/lib/symbols/midi-uart-interface-san.lib)(options "")(descr ""))
+)
