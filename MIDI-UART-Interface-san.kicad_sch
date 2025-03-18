@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "749dfe75-c0d6-4872-9330-29c5bbcb8ff8")
 	(paper "A4")
 	(title_block
@@ -90,18 +90,6 @@
 			(symbol "BAS70DW-04-7-F_0_1"
 				(polyline
 					(pts
-						(xy 7.62 -10.16) (xy 48.26 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 7.62 5.08) (xy 7.62 -10.16)
 					)
 					(stroke
@@ -114,7 +102,7 @@
 				)
 				(polyline
 					(pts
-						(xy 48.26 -10.16) (xy 48.26 5.08)
+						(xy 7.62 -10.16) (xy 48.26 -10.16)
 					)
 					(stroke
 						(width 0.127)
@@ -127,6 +115,18 @@
 				(polyline
 					(pts
 						(xy 48.26 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 48.26 -10.16) (xy 48.26 5.08)
 					)
 					(stroke
 						(width 0.127)
@@ -191,16 +191,16 @@
 					)
 				)
 				(pin unspecified line
-					(at 55.88 -5.08 180)
+					(at 55.88 0 180)
 					(length 7.62)
-					(name "A2"
+					(name "AC1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -227,16 +227,16 @@
 					)
 				)
 				(pin unspecified line
-					(at 55.88 0 180)
+					(at 55.88 -5.08 180)
 					(length 7.62)
-					(name "AC1"
+					(name "A2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "6"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -245,6 +245,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "CD74HC4050PWR:CD74HC4050PWR"
 			(pin_names
@@ -378,17 +379,71 @@
 						)
 					)
 				)
-				(pin output line
-					(at 17.78 2.54 180)
+				(pin input line
+					(at -17.78 10.16 0)
 					(length 5.08)
-					(name "4Y"
+					(name "1A"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "10"
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 7.62 0)
+					(length 5.08)
+					(name "2A"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 5.08 0)
+					(length 5.08)
+					(name "3A"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 2.54 0)
+					(length 5.08)
+					(name "4A"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -407,42 +462,6 @@
 						)
 					)
 					(number "11"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 0 180)
-					(length 5.08)
-					(name "5Y"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 17.78 -7.62 180)
-					(length 5.08)
-					(name "NC_13"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "13"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -469,42 +488,6 @@
 					)
 				)
 				(pin output line
-					(at 17.78 -2.54 180)
-					(length 5.08)
-					(name "6Y"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 17.78 -10.16 180)
-					(length 5.08)
-					(name "NC_16"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
 					(at 17.78 10.16 180)
 					(length 5.08)
 					(name "1Y"
@@ -515,24 +498,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -17.78 10.16 0)
-					(length 5.08)
-					(name "1A"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -558,24 +523,6 @@
 						)
 					)
 				)
-				(pin input line
-					(at -17.78 7.62 0)
-					(length 5.08)
-					(name "2A"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
 				(pin output line
 					(at 17.78 5.08 180)
 					(length 5.08)
@@ -594,17 +541,89 @@
 						)
 					)
 				)
-				(pin input line
-					(at -17.78 5.08 0)
+				(pin output line
+					(at 17.78 2.54 180)
 					(length 5.08)
-					(name "3A"
+					(name "4Y"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "7"
+					(number "10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 0 180)
+					(length 5.08)
+					(name "5Y"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 17.78 -2.54 180)
+					(length 5.08)
+					(name "6Y"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 17.78 -7.62 180)
+					(length 5.08)
+					(name "NC_13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 17.78 -10.16 180)
+					(length 5.08)
+					(name "NC_16"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "16"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -630,25 +649,8 @@
 						)
 					)
 				)
-				(pin input line
-					(at -17.78 2.54 0)
-					(length 5.08)
-					(name "4A"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:AudioJack3"
 			(exclude_from_sim no)
@@ -729,18 +731,6 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -2.54) (xy 0.635 -3.175) (xy 1.27 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -1.905 -2.54) (xy -1.27 -3.175) (xy -0.635 -2.54) (xy -0.635 0) (xy 2.54 0)
 					)
 					(stroke
@@ -753,7 +743,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -2.54) (xy -3.175 -3.175) (xy -3.81 -2.54)
+						(xy 0 -2.54) (xy 0.635 -3.175) (xy 1.27 -2.54) (xy 2.54 -2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -774,26 +764,20 @@
 						(type background)
 					)
 				)
-			)
-			(symbol "AudioJack3_1_1"
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -2.54) (xy -3.175 -3.175) (xy -3.81 -2.54)
 					)
-					(number "R"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
+			)
+			(symbol "AudioJack3_1_1"
 				(pin passive line
 					(at 5.08 2.54 180)
 					(length 2.54)
@@ -805,6 +789,24 @@
 						)
 					)
 					(number "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "R"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -831,10 +833,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:Conn_01x03_Female"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -900,21 +905,9 @@
 				)
 			)
 			(symbol "Conn_01x03_Female_1_1"
-				(arc
-					(start 0 -2.032)
-					(mid -0.5058 -2.54)
-					(end 0 -3.048)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
+						(xy -1.27 2.54) (xy -0.508 2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -938,7 +931,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 2.54) (xy -0.508 2.54)
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -949,21 +942,33 @@
 					)
 				)
 				(arc
-					(start 0 0.508)
-					(mid -0.5058 0)
-					(end 0 -0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 3.048)
+					(start 0 2.032)
 					(mid -0.5058 2.54)
-					(end 0 2.032)
+					(end 0 3.048)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -1027,10 +1032,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:Conn_01x04_Female"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1096,45 +1104,9 @@
 				)
 			)
 			(symbol "Conn_01x04_Female_1_1"
-				(arc
-					(start 0 -4.572)
-					(mid -0.5058 -5.08)
-					(end 0 -5.588)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -2.032)
-					(mid -0.5058 -2.54)
-					(end 0 -3.048)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
-						(xy -1.27 -5.08) (xy -0.508 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
+						(xy -1.27 2.54) (xy -0.508 2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -1158,7 +1130,19 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 2.54) (xy -0.508 2.54)
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -5.08) (xy -0.508 -5.08)
 					)
 					(stroke
 						(width 0.1524)
@@ -1169,21 +1153,45 @@
 					)
 				)
 				(arc
-					(start 0 0.508)
-					(mid -0.5058 0)
-					(end 0 -0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 3.048)
+					(start 0 2.032)
 					(mid -0.5058 2.54)
-					(end 0 2.032)
+					(end 0 3.048)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -5.588)
+					(mid -0.5058 -5.08)
+					(end 0 -4.572)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -1265,11 +1273,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.762) hide)
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1367,6 +1380,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector_Audio:AudioJack3"
 			(exclude_from_sim no)
@@ -1447,18 +1461,6 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -2.54) (xy 0.635 -3.175) (xy 1.27 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -1.905 -2.54) (xy -1.27 -3.175) (xy -0.635 -2.54) (xy -0.635 0) (xy 2.54 0)
 					)
 					(stroke
@@ -1471,7 +1473,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -2.54) (xy -3.175 -3.175) (xy -3.81 -2.54)
+						(xy 0 -2.54) (xy 0.635 -3.175) (xy 1.27 -2.54) (xy 2.54 -2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -1492,26 +1494,20 @@
 						(type background)
 					)
 				)
-			)
-			(symbol "AudioJack3_1_1"
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -2.54) (xy -3.175 -3.175) (xy -3.81 -2.54)
 					)
-					(number "R"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
+			)
+			(symbol "AudioJack3_1_1"
 				(pin passive line
 					(at 5.08 2.54 180)
 					(length 2.54)
@@ -1523,6 +1519,24 @@
 						)
 					)
 					(number "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "R"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1549,9 +1563,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -1624,7 +1641,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -1636,7 +1653,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -1685,160 +1702,16 @@
 					)
 				)
 			)
-		)
-		(symbol "Device:CP"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Device_CP"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "CP_0_1"
-				(rectangle
-					(start -2.286 0.508)
-					(end 2.286 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.794) (xy -1.27 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 -0.508)
-					(end -2.286 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "CP_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:D"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1918,10 +1791,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1930,10 +1803,10 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -1979,11 +1852,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:LED"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2051,10 +1929,22 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -2075,7 +1965,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -2087,22 +1977,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -2148,9 +2026,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -2269,6 +2150,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "MIDI-Interface-san-rescue:TLP2361_TPL_E-dk_Optoisolators-Logic-Output"
 			(pin_names
@@ -2418,7 +2300,67 @@
 				)
 				(polyline
 					(pts
+						(xy -5.08 2.54) (xy -3.81 2.54) (xy -3.81 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -2.54) (xy -3.81 -2.54) (xy -3.81 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy -4.445 -0.508) (xy -3.175 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.318 0.635) (xy -3.175 0.635) (xy -3.81 -0.508) (xy -4.445 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.667 -0.508) (xy -1.905 -1.27) (xy -2.286 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0.508) (xy -1.778 -0.254) (xy -1.778 0.127)
 					)
 					(stroke
 						(width 0)
@@ -2466,7 +2408,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -3.81) (xy 0 -1.27)
+						(xy -0.635 1.27) (xy -0.635 -1.27) (xy 1.27 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -2490,7 +2432,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.921 0) (xy 5.08 0)
+						(xy 0 -3.81) (xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -2498,84 +2440,12 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -2.54) (xy -3.81 -2.54) (xy -3.81 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 2.54) (xy -3.81 2.54) (xy -3.81 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.667 -0.508) (xy -1.905 -1.27) (xy -2.286 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0.508) (xy -1.778 -0.254) (xy -1.778 0.127)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 1.27) (xy -0.635 -1.27) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.318 0.635) (xy -3.175 0.635) (xy -3.81 -0.508) (xy -4.445 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 				(arc
-					(start 1.27 -1.27)
+					(start 1.27 1.27)
 					(mid 2.4193 0)
-					(end 1.27 1.27)
+					(end 1.27 -1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -2587,6 +2457,18 @@
 				(circle
 					(center 2.667 0)
 					(radius 0.2794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.921 0) (xy 5.08 0)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -2634,6 +2516,24 @@
 					)
 				)
 				(pin power_in line
+					(at 0 7.62 270)
+					(length 3.81)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
 					(at 0 -7.62 90)
 					(length 3.81)
 					(name "GND"
@@ -2669,30 +2569,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 3.81)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2790,6 +2677,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -2869,7 +2757,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -2886,12 +2775,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2982,6 +2876,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:VCC"
 			(power)
@@ -3059,7 +2954,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -3071,7 +2966,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -3085,7 +2980,8 @@
 			(symbol "VCC_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "VCC"
 						(effects
 							(font
@@ -3102,7 +2998,63 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "red"
+		(exclude_from_sim no)
+		(at 21.59 180.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4a21e717-d46d-4d9e-8b98-af4ecb02d3ec")
+	)
+	(text "IN"
+		(exclude_from_sim no)
+		(at 21.59 57.15 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "6781326c-6e0d-4753-8f28-0f5c687e01f9")
+	)
+	(text "yellow"
+		(exclude_from_sim no)
+		(at 60.96 180.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a17904b9-135e-4dae-ae20-401c7787de72")
+	)
+	(text "OUT"
+		(exclude_from_sim no)
+		(at 19.05 143.51 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "c701ee8e-1214-4781-a973-17bef7b6e3eb")
+	)
+	(text "green"
+		(exclude_from_sim no)
+		(at 106.68 180.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f202141e-c20d-4cac-b016-06a44f2ecce8")
 	)
 	(junction
 		(at 125.095 59.69)
@@ -3221,10 +3173,6 @@
 	(no_connect
 		(at 254 87.63)
 		(uuid "155b0b7c-70b4-4a26-a550-bac13cab0aa4")
-	)
-	(no_connect
-		(at 36.83 87.63)
-		(uuid "31540a7e-dc9e-4e4d-96b1-dab15efa5f4b")
 	)
 	(no_connect
 		(at 43.18 49.53)
@@ -4184,61 +4132,6 @@
 		)
 		(uuid "fd3499d5-6fd2-49a4-bdb0-109cee899fde")
 	)
-	(text "red"
-		(exclude_from_sim no)
-		(at 21.59 180.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4a21e717-d46d-4d9e-8b98-af4ecb02d3ec")
-	)
-	(text "IN"
-		(exclude_from_sim no)
-		(at 21.59 57.15 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left bottom)
-		)
-		(uuid "6781326c-6e0d-4753-8f28-0f5c687e01f9")
-	)
-	(text "yellow"
-		(exclude_from_sim no)
-		(at 60.96 180.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a17904b9-135e-4dae-ae20-401c7787de72")
-	)
-	(text "OUT"
-		(exclude_from_sim no)
-		(at 19.05 143.51 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left bottom)
-		)
-		(uuid "c701ee8e-1214-4781-a973-17bef7b6e3eb")
-	)
-	(text "green"
-		(exclude_from_sim no)
-		(at 106.68 180.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f202141e-c20d-4cac-b016-06a44f2ecce8")
-	)
 	(global_label "A2"
 		(shape input)
 		(at 121.92 54.61 0)
@@ -4503,7 +4396,7 @@
 			)
 		)
 	)
-	(global_label "OUT_R"
+	(global_label "BRIDGED IN R"
 		(shape output)
 		(at 128.27 59.69 0)
 		(fields_autoplaced yes)
@@ -4515,7 +4408,7 @@
 		)
 		(uuid "497d39d7-b5a1-4435-a64c-de3e2157fe48")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.042 59.69 0)
+			(at 141.3356 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4547,7 +4440,7 @@
 			)
 		)
 	)
-	(global_label "OUT_R"
+	(global_label "BRIDGED IN R"
 		(shape input)
 		(at 36.83 90.17 180)
 		(fields_autoplaced yes)
@@ -4559,7 +4452,7 @@
 		)
 		(uuid "53b25bb5-4d20-4211-b39f-a218c34a5dfc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 28.6328 90.17 0)
+			(at 23.7644 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4613,7 +4506,7 @@
 			)
 		)
 	)
-	(global_label "OUT_T"
+	(global_label "BRIDGED IN T"
 		(shape input)
 		(at 36.83 92.71 180)
 		(fields_autoplaced yes)
@@ -4625,7 +4518,7 @@
 		)
 		(uuid "6f87087f-47d3-4578-b9b2-cceec1f4abe9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 28.9352 92.71 0)
+			(at 23.8326 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4767,7 +4660,7 @@
 			)
 		)
 	)
-	(global_label "OUT_T"
+	(global_label "BRIDGED IN T"
 		(shape output)
 		(at 128.27 68.58 0)
 		(fields_autoplaced yes)
@@ -4779,7 +4672,7 @@
 		)
 		(uuid "b06016ef-78df-48b7-af58-ec0c48b3128e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 136.7396 68.58 0)
+			(at 141.2674 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5143,7 +5036,7 @@
 			(uuid "5e1bc6a0-76d5-4599-8c70-c6941714056c")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "R4")
 					(unit 1)
@@ -5221,7 +5114,7 @@
 			(uuid "b8f5104e-bf28-4c2c-8bbd-3000ed3cc70b")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "D1")
 					(unit 1)
@@ -5286,7 +5179,7 @@
 			(uuid "e911f74f-5c13-4104-b705-e94ea2f10963")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR07")
 					(unit 1)
@@ -5364,7 +5257,7 @@
 			(uuid "9a2d9092-08f4-4605-9911-facfa3d14ae4")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "R8")
 					(unit 1)
@@ -5397,7 +5290,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MIDI-UART-Interface-san:SOP65P640X120-16N"
+		(property "Footprint" "MIDI-Interface-san:SOP65P640X120-16N"
 			(at 236.22 92.71 0)
 			(effects
 				(font
@@ -5524,7 +5417,7 @@
 			(uuid "3010bd92-9bc0-4242-bb94-f25a87288587")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "U1")
 					(unit 1)
@@ -5589,7 +5482,7 @@
 			(uuid "f81e2caa-f7a2-40dd-8668-c447b8223c0a")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR018")
 					(unit 1)
@@ -5654,7 +5547,7 @@
 			(uuid "8c1b4983-9763-4fa7-a50c-81ffb400f6d5")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR017")
 					(unit 1)
@@ -5719,7 +5612,7 @@
 			(uuid "f0ed18cf-ada3-42e9-a162-e356cd8a5b45")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR015")
 					(unit 1)
@@ -5797,7 +5690,7 @@
 			(uuid "11bc6db9-91f6-40e9-aed4-d0a2cd7787e6")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "C2")
 					(unit 1)
@@ -5862,7 +5755,7 @@
 			(uuid "ad2c2e59-c034-4d71-b690-64f26f121be3")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR016")
 					(unit 1)
@@ -5927,7 +5820,7 @@
 			(uuid "e1e8ab93-53e2-49b4-80f5-4568cb3bae24")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR03")
 					(unit 1)
@@ -5992,7 +5885,7 @@
 			(uuid "539001f2-51e0-41a4-a0f4-de9e1c0f0f88")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR04")
 					(unit 1)
@@ -6027,7 +5920,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MIDI-UART-Interface-san:TP_1PAD"
+		(property "Footprint" "my_footprint:TP_1PAD"
 			(at 62.23 93.98 0)
 			(effects
 				(font
@@ -6058,7 +5951,7 @@
 			(uuid "2cd22269-6904-465f-b343-92420b748c73")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "TP3")
 					(unit 1)
@@ -6123,7 +6016,7 @@
 			(uuid "977b4f77-0747-4b07-bb54-222df0fc1d95")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR01")
 					(unit 1)
@@ -6201,7 +6094,7 @@
 			(uuid "cc161bc5-103e-454f-bc68-ddfa43a9aa07")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "R1")
 					(unit 1)
@@ -6279,7 +6172,7 @@
 			(uuid "7f6c4566-a90c-4b24-a3a4-7c0b57ef5f10")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "LED1")
 					(unit 1)
@@ -6344,7 +6237,7 @@
 			(uuid "605bd203-51b0-49a6-b48a-17337dd657ad")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR06")
 					(unit 1)
@@ -6409,7 +6302,7 @@
 			(uuid "a39339b9-a00c-4a8e-bb6e-78f0cad656a5")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR012")
 					(unit 1)
@@ -6474,7 +6367,7 @@
 			(uuid "87e9314c-e9ab-4c86-a0e8-1da0807d47e1")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR02")
 					(unit 1)
@@ -6509,7 +6402,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MIDI-UART-Interface-san:TP_1PAD"
+		(property "Footprint" "my_footprint:TP_1PAD"
 			(at 97.79 106.68 0)
 			(effects
 				(font
@@ -6540,7 +6433,7 @@
 			(uuid "20838781-7a40-4f69-bbd5-651718039946")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "TP4")
 					(unit 1)
@@ -6575,7 +6468,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MIDI-UART-Interface-san:TP_1PAD"
+		(property "Footprint" "my_footprint:TP_1PAD"
 			(at 153.67 143.51 0)
 			(effects
 				(font
@@ -6606,7 +6499,7 @@
 			(uuid "180b5e19-28b0-4db0-bff9-126d62c84ad4")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "TP5")
 					(unit 1)
@@ -6684,7 +6577,7 @@
 			(uuid "6c175819-5e29-4d92-90d3-b572737e1192")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "R6")
 					(unit 1)
@@ -6762,7 +6655,7 @@
 			(uuid "872815dc-5dd3-45e3-8971-73ae10c4d9ee")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "LED2")
 					(unit 1)
@@ -6840,7 +6733,7 @@
 			(uuid "ece9f366-90c2-4203-9dd7-b9adc8043262")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "R9")
 					(unit 1)
@@ -6918,7 +6811,7 @@
 			(uuid "f333d974-b99c-4bf5-abef-09354cacc60c")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "LED3")
 					(unit 1)
@@ -6953,7 +6846,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MIDI-UART-Interface-san:TP_1PAD"
+		(property "Footprint" "my_footprint:TP_1PAD"
 			(at 58.42 19.05 0)
 			(effects
 				(font
@@ -6984,7 +6877,7 @@
 			(uuid "ed1dfd1c-32a6-4f5f-87a7-d529e6a4c1e4")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "TP1")
 					(unit 1)
@@ -7019,7 +6912,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MIDI-UART-Interface-san:TP_1PAD"
+		(property "Footprint" "my_footprint:TP_1PAD"
 			(at 48.26 26.67 0)
 			(effects
 				(font
@@ -7050,87 +6943,9 @@
 			(uuid "babe5627-ac22-4fb1-9642-cfab572c7144")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "TP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:CP")
-		(at 82.55 24.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005fe09b2c")
-		(property "Reference" "C1"
-			(at 85.5472 22.9616 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100u"
-			(at 85.5472 25.273 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.3"
-			(at 83.5152 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "VE-101M1CTR-0605 (SMD-ECAP-6.3x5.3)"
-			(at 82.55 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 82.55 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C176674"
-			(at 82.55 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f2f4c15a-ff5d-438c-a4cd-199c22955067")
-		)
-		(pin "2"
-			(uuid "79a8c7f0-65a5-4428-9aef-5a87fd97bddf")
-		)
-		(instances
-			(project "MIDI-UART-Interface-san"
-				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
-					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -7193,7 +7008,7 @@
 			(uuid "1ede90b2-8c8e-40bd-b2e4-9503f1ee4859")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR09")
 					(unit 1)
@@ -7258,7 +7073,7 @@
 			(uuid "98bb9d69-dfde-4d68-acaf-e3b8842fc094")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR010")
 					(unit 1)
@@ -7323,7 +7138,7 @@
 			(uuid "5080d3ef-00dd-4280-9122-4a67c05a0fe5")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR05")
 					(unit 1)
@@ -7388,7 +7203,7 @@
 			(uuid "179d57cd-6aed-4778-972a-eba8e5b515da")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR011")
 					(unit 1)
@@ -7466,7 +7281,7 @@
 			(uuid "0cd1636a-735e-45a3-b0d3-7dc7464af6d9")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "R5")
 					(unit 1)
@@ -7549,7 +7364,7 @@
 			(uuid "dab57940-3bd9-42b9-bb1a-a163857d7fcb")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "CN1")
 					(unit 1)
@@ -7614,7 +7429,7 @@
 			(uuid "3b809d5e-1cd6-4bd7-8775-d6e8648b017c")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#FLG01")
 					(unit 1)
@@ -7679,7 +7494,7 @@
 			(uuid "fa60c2cc-47f9-4cec-ae56-c0f01a2cc300")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#FLG02")
 					(unit 1)
@@ -7714,7 +7529,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MIDI-UART-Interface-san:3.5mm_Stereo_TRS_PJ-3210-4A_and_ST-005-G"
+		(property "Footprint" "MIDI-Interface-san:3.5mm_Stereo_TRS_PJ-3210-4A_and_ST-005-G"
 			(at 39.37 138.43 0)
 			(effects
 				(font
@@ -7760,7 +7575,7 @@
 			(uuid "a1b095b1-7fa4-4a41-9e9b-b86e11ad9e33")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "J2")
 					(unit 1)
@@ -7826,7 +7641,7 @@
 			(uuid "cc52642a-62bb-4e30-9fac-e5ae44f32413")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "H1")
 					(unit 1)
@@ -7892,7 +7707,7 @@
 			(uuid "8fbda080-2274-46f6-95b4-bbf3431863ad")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "H2")
 					(unit 1)
@@ -7958,7 +7773,7 @@
 			(uuid "c16c32ce-c2d3-4ae9-9878-c8beef5b4f3c")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "H3")
 					(unit 1)
@@ -8024,7 +7839,7 @@
 			(uuid "915413e7-25cc-4a7b-9531-dd764fcee135")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "H4")
 					(unit 1)
@@ -8089,7 +7904,7 @@
 			(uuid "003721da-b645-4703-8a1f-33eb61dc1a1e")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR013")
 					(unit 1)
@@ -8167,7 +7982,7 @@
 			(uuid "17b8cb88-1e4e-4935-92d4-be462518332f")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "R10")
 					(unit 1)
@@ -8232,7 +8047,7 @@
 			(uuid "f5575d6c-3e76-46a5-b12c-d31e312260d2")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR014")
 					(unit 1)
@@ -8313,7 +8128,7 @@
 			(uuid "ae92783d-35ff-4bca-9eab-f0ac61bf7f97")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "J4")
 					(unit 1)
@@ -8394,7 +8209,7 @@
 			(uuid "30aa609a-500d-498b-bfbb-13dc95d32566")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "J3")
 					(unit 1)
@@ -8472,7 +8287,7 @@
 			(uuid "59b57c3f-b21c-4c1b-8134-9eec6f28fd36")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "R7")
 					(unit 1)
@@ -8548,7 +8363,7 @@
 			(uuid "ba561e24-957d-427f-87de-715419008a6b")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "R2")
 					(unit 1)
@@ -8624,7 +8439,7 @@
 			(uuid "2729dd4f-a3e0-4dae-9435-9808feba93c1")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "R3")
 					(unit 1)
@@ -8689,7 +8504,7 @@
 			(uuid "b65a95d9-e742-4bd8-a49a-dee994023109")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR0101")
 					(unit 1)
@@ -8754,7 +8569,7 @@
 			(uuid "a0761754-d6e5-4cfb-aecf-bf12ec6f96aa")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR0102")
 					(unit 1)
@@ -8924,7 +8739,7 @@
 			(uuid "e6bd474d-c274-4be4-826d-671799efd8e2")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "U2")
 					(unit 1)
@@ -8989,7 +8804,7 @@
 			(uuid "cd0c9986-0509-49e1-afcb-dfc49dd0af74")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR0103")
 					(unit 1)
@@ -9054,7 +8869,7 @@
 			(uuid "695a1845-0347-4c08-bd16-83907895d1c1")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR08")
 					(unit 1)
@@ -9132,7 +8947,7 @@
 			(uuid "f5a71fa9-e4d6-4ba5-9e60-1e546211d93a")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "C3")
 					(unit 1)
@@ -9197,7 +9012,7 @@
 			(uuid "442a97ad-64b6-4068-b29b-7aa5ecd79532")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "#PWR019")
 					(unit 1)
@@ -9232,7 +9047,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "MIDI-UART-Interface-san:3.5mm_Stereo_TRS_PJ-3210-4A_and_ST-005-G"
+		(property "Footprint" "my_footprint:3.5mm_Stereo_TRS_PJ-3210-4A_and_ST-005-G"
 			(at 38.1 52.07 0)
 			(effects
 				(font
@@ -9287,9 +9102,88 @@
 			(uuid "81ef1e39-7d64-426d-a5fd-84d659e7e6c0")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 82.55 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3112968a-2d58-483a-a653-413adfdf689c")
+		(property "Reference" "C1"
+			(at 85.471 23.2953 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100u 6.3V"
+			(at 85.471 25.8322 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 83.5152 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 82.55 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15008"
+			(at 82.55 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9dd87309-984d-4a36-a81a-90fddb05af52")
+		)
+		(pin "2"
+			(uuid "2cd3acb5-7833-4e4d-afe9-dacf2334727e")
+		)
+		(instances
+			(project "MIDI-Interface-san"
+				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -9321,7 +9215,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MIDI-UART-Interface-san:SOT-363_DIO"
+		(property "Footprint" "ultra_librarian:SOT-363_DIO"
 			(at 66.04 49.53 0)
 			(effects
 				(font
@@ -9378,7 +9272,7 @@
 			(uuid "c747bd15-e775-44b8-b2ca-eb2cc1ef1057")
 		)
 		(instances
-			(project "MIDI-UART-Interface-san"
+			(project "MIDI-Interface-san"
 				(path "/749dfe75-c0d6-4872-9330-29c5bbcb8ff8"
 					(reference "U3")
 					(unit 1)
@@ -9391,4 +9285,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
